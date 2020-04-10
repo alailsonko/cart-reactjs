@@ -11,9 +11,9 @@ DONE
 
 TODO
 --------
-facebook-clone
-netflix-clone
-youtube-clone
-soundcloud-clone
-spotify-clone
+* facebook-clone
+* netflix-clone
+* youtube-clone
+* soundcloud-clone
+* spotify-clone
 
