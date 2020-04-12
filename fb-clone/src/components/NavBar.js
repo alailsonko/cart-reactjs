@@ -5,26 +5,27 @@ class NavBar extends React.Component{
     render(){
         return (
          <nav>
-            <ul>
-            <li><a >facebook</a></li>
-            <div>
-            <div>
-            <li><a >Email or Phone</a></li>
-            <input></input>
-            </div>
-            <div>
-            <li><a >Password</a></li>
-            <input></input>
-            </div>
+           <form>
+               <div>
+                <h2>facebook</h2>
+               </div>
+               <div className="forms">
+                    <div className="emailPhone">
+                        <label>email or phoen</label>
+                        <input className="epIn"/>
+                    </div>
+                    <div className="pwd">
+                        <label>password</label>
+                        <input className="pwdIn"/>
+                        <label><small>forgot password?</small></label>
+                    </div>
+                    <div>
+                        <button>Log In</button>
+                    </div>
+               </div>
 
-            <small><a >Forgot account?</a></small>
-            <li ><a className="active">Log In</a></li>
 
-
-            </div>
-
-
-            </ul>
+           </form>
          </nav>
         );
     }
