@@ -1,7 +1,15 @@
-import React from 'react';
+import React from "react";
 
-function App() {
-  return <h1>Rocketseat</h1>;
+import GlobalStyles from "./styles/GlobalStyles";
+import Layout from "./components/Layout";
+
+function App(): JSX.Element {
+  return (
+    <>
+      <Layout />
+      <GlobalStyles />
+    </>
+  );
 }
 
 export default App;
