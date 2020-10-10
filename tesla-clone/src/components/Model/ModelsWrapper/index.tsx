@@ -3,11 +3,11 @@ import React, { useRef, useState, useCallback } from 'react';
 import { CarModel } from '../ModelsContext'
 import ModelsContext from '../ModelsContext'
 
+import ModelOverlay from '../ModelOverlay'
 
 import { 
   Container,
-  OverlaysRoot,
-  ModelOverlay
+  OverlaysRoot
 } from './styles';
 
 const ModelsWrapper: React.FC = ({ children }) => {
@@ -41,7 +41,7 @@ const getModelByName = useCallback(( modelName: string) =>{
       <Container ref={wrapperRef} >
         <OverlaysRoot>
            {registeredModels.map(item => (
-             <ModelOverlay key={item.modelName}>
+             <ModelOverlay model={item} key={item.modelName}>
                {item.overlayNode}
              </ModelOverlay>
            ))}
