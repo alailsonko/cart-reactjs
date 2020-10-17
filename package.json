@@ -18,7 +18,7 @@
     "test:ci": "cross-env CI=true react-scripts test",
     "test:ci:alt": "react-scripts test --ci --watchAll=false",
     "test:jsdom": "yarn test --env=jsdom",
-    "test:staged": "yarn test:ci --findRelatedTests -c jest-unit-config.js",
+    "test:staged": "yarn test:ci --findRelatedTests ./src/**/*.spec.{ts,tsx}",
     "test:coverage": "yarn test:ci --coverage",
     "eject": "react-scripts eject"
   },

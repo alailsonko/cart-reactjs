@@ -13,6 +13,7 @@ beforeEach(() => {
 
 afterEach(() => {
   // Limpar ao sair
+
   unmountComponentAtNode(container);
   container.remove();
   container = null;
