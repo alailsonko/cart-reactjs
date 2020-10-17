@@ -14,7 +14,7 @@ beforeEach(() => {
 });
 
 afterEach(() => {
-  // Limpar ao sair
+  // Limpar ao sair -
 
   unmountComponentAtNode(container);
   container.remove();
