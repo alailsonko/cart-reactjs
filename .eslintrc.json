@@ -17,7 +17,7 @@
         "ecmaFeatures": {
             "jsx": true
         },
-        "ecmaVersion": 12,
+        "ecmaVersion": 6,
         "sourceType": "module"
     },
     "plugins": [
@@ -42,11 +42,11 @@
     "settings": {
         "import/extensions": [".js", ".jsx", ".ts", ".tsx"],
         "import/parsers": {
-          "@typescript-eslint/parser": [".ts", ".tsx"]
+          "@typescript-eslint/parser": [".ts", ".tsx", ".js", ".jsx"]
         },
         "import/resolver": {
           "typescript": {
-            "directory": "./tsconfig.json"
+            "project": "./tsconfig.json"
           },
           "node": {
             "extensions": [".js", ".jsx", ".ts", ".tsx"]
