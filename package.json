@@ -14,11 +14,11 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test -c jest-unit-config.js",
     "test:ci": "cross-env CI=true react-scripts test",
     "test:ci:alt": "react-scripts test --ci --watchAll=false",
     "test:jsdom": "yarn test --env=jsdom",
-    "test:staged": "yarn test:ci --findRelatedTests ./src/**/*.spec.{ts,tsx}",
+    "test:staged": "yarn -- --findRelatedTests",
     "test:coverage": "yarn test:ci --coverage",
     "eject": "react-scripts eject"
   },

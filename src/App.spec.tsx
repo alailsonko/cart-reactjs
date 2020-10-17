@@ -7,6 +7,7 @@ import App from './App';
 let container: any = null;
 beforeEach(() => {
   // configurar o elemento do DOM como o alvo da renderização
+
   container = document.createElement('div');
   document.body.appendChild(container);
 });
