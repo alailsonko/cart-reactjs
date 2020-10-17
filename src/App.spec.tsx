@@ -5,6 +5,7 @@ import { act } from 'react-dom/test-utils';
 import App from './App';
 
 let container: any = null;
+
 beforeEach(() => {
   // configurar o elemento do DOM como o alvo da renderização
 
