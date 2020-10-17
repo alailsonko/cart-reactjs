@@ -17,7 +17,8 @@ afterEach(() => {
   container.remove();
   container = null;
 });
-
+// eslint-disable-next-line no-console
+console.log('testing');
 it('renders with or without a name', () => {
   act(() => {
     render(<App />, container);
