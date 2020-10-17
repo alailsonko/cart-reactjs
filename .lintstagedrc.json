@@ -3,7 +3,7 @@
         "eslint 'src/**' --fix"
     
     ],
-    "./src/**/*.{ts,tsx}": [
+    "./src/**/*.spec.{ts,tsx}": [
         "yarn test:staged"
     ]
 }
