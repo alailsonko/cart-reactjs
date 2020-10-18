@@ -1,42 +1,8 @@
-import React from 'react';
-import { render, unmountComponentAtNode } from 'react-dom';
-import { act } from 'react-dom/test-utils';
+// eslint-disable-next-line no-unused-vars
+import render from 'react-dom';
 
-import App from './App';
-
-let container: any = null;
-
-beforeEach(() => {
-  // configurar o elemento do DOM como o alvo da renderização
-
-  container = document.createElement('div');
-  document.body.appendChild(container);
-});
-
-afterEach(() => {
-  // Limpar ao sair - limpar
-
-  unmountComponentAtNode(container);
-  container.remove();
-  container = null;
-});
-
-// eslint-disable-next-line no-console
-console.log('testing');
-
-it('renders with or without a name', () => {
-  act(() => {
-    render(<App />, container);
+describe('Name of the group', () => {
+  test('should', () => {
+    expect(3).toBe(3);
   });
-  expect(container.textContent).toBe('Hey, stranger');
-
-  act(() => {
-    render(<App name="Jenny" />, container);
-  });
-  expect(container.textContent).toBe('Hello, Jenny!');
-
-  act(() => {
-    render(<App name="Margaret" />, container);
-  });
-  expect(container.textContent).toBe('Hello, Margaret!');
 });
