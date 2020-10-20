@@ -10,7 +10,7 @@
       "isFreeShipping": true,
       "quantity": 12,
       "category": "male",
-      "image": "%PUBLIC_URL%/static/img/1-tshirt-male.jpeg"
+      "image": "http://localhost:3000/static/img/1-t-shirt-male.jpeg"
     },    {
       "id": "2",
       "sku": "9372732739827381",
@@ -21,7 +21,7 @@
       "isFreeShipping": true,
       "quantity": 12,
       "category": "male",
-      "image": "%PUBLIC_URL%/static/img/2-tshirt-male.jpeg"
+      "image": "http://localhost:3000/static/img/2-t-shirt-male.jpeg"
     },    {
       "id": "3",
       "sku": "9372732739827381",
@@ -32,7 +32,7 @@
       "isFreeShipping": true,
       "quantity": 12,
       "category": "male",
-      "image": "%PUBLIC_URL%/static/img/3-tshirt-male.jpeg"
+      "image": "http://localhost:3000/static/img/3-t-shirt-male.jpeg"
     },    {
       "id": "4",
       "sku": "9372732739827381",
@@ -43,7 +43,7 @@
       "isFreeShipping": true,
       "quantity": 12,
       "category": "male",
-      "image": "%PUBLIC_URL%/static/img/4-tshirt-male.jpeg"
+      "image": "http://localhost:3000/static/img/4-t-shirt-male.jpeg"
     },    {
       "id": "5",
       "sku": "9372732739827381",
@@ -54,7 +54,7 @@
       "isFreeShipping": true,
       "quantity": 12,
       "category": "male",
-      "image": "%PUBLIC_URL%/static/img/5-tshirt-male.jpeg"
+      "image": "http://localhost:3000/static/img/5-t-shirt-male.jpeg"
     },    {
       "id": "6",
       "sku": "9372732739827381",
@@ -65,7 +65,7 @@
       "isFreeShipping": true,
       "quantity": 12,
       "category": "male",
-      "image": "%PUBLIC_URL%/static/img/6-tshirt-male.jpeg"
+      "image": "http://localhost:3000/static/img/6-t-shirt-male.jpeg"
     },    {
       "id": "7",
       "sku": "9372732739827381",
@@ -76,7 +76,7 @@
       "isFreeShipping": true,
       "quantity": 12,
       "category": "male",
-      "image": "%PUBLIC_URL%/static/img/7-tshirt-male.jpeg"
+      "image": "http://localhost:3000/static/img/7-t-shirt-male.jpeg"
     },    {
       "id": "8",
       "sku": "9372732739827381",
@@ -87,7 +87,7 @@
       "isFreeShipping": true,
       "quantity": 12,
       "category": "male",
-      "image": "%PUBLIC_URL%/static/img/8-tshirt-male.jpeg"
+      "image": "http://localhost:3000/static/img/8-t-shirt-male.jpeg"
     },    {
       "id": "9",
       "sku": "9372732739827381",
@@ -98,7 +98,7 @@
       "isFreeShipping": true,
       "quantity": 12,
       "category": "male",
-      "image": "%PUBLIC_URL%/static/img/9-tshirt-male.jpeg"
+      "image": "http://localhost:3000/static/img/9-t-shirt-male.jpeg"
     },    {
       "id": "10",
       "sku": "9372732739827381",
@@ -109,7 +109,7 @@
       "isFreeShipping": true,
       "quantity": 12,
       "category": "male",
-      "image": "%PUBLIC_URL%/static/img/10-tshirt-male.jpeg"
+      "image": "http://localhost:3000/static/img/10-t-shirt-male.jpeg"
     },    {
       "id": "11",
       "sku": "9372732739827381",
@@ -120,7 +120,7 @@
       "isFreeShipping": true,
       "quantity": 12,
       "category": "male",
-      "image": "%PUBLIC_URL%/static/img/11-tshirt-male.jpeg"
+      "image": "http://localhost:3000/static/img/11-t-shirt-male.png"
     },    {
       "id": "12",
       "sku": "9372732739827381",
@@ -131,7 +131,7 @@
       "isFreeShipping": true,
       "quantity": 12,
       "category": "male",
-      "image": "%PUBLIC_URL%/static/img/12-tshirt-male.jpeg"
+      "image": "http://localhost:3000/static/img/12-t-shirt-male.jpeg"
     },    {
       "id": "13",
       "sku": "9372732739827381",
@@ -142,7 +142,7 @@
       "isFreeShipping": true,
       "quantity": 12,
       "category": "male",
-      "image": "%PUBLIC_URL%/static/img/13-tshirt-male.jpeg"
+      "image": "http://localhost:3000/static/img/13-t-shirt-male.jpeg"
     },    {
       "id": "14",
       "sku": "9372732739827381",
@@ -153,7 +153,7 @@
       "isFreeShipping": true,
       "quantity": 12,
       "category": "male",
-      "image": "%PUBLIC_URL%/static/img/14-tshirt-male.jpeg"
+      "image": "http://localhost:3000/static/img/14-t-shirt-male.jpeg"
     },    {
       "id": "15",
       "sku": "9372732739827381",
@@ -164,7 +164,7 @@
       "isFreeShipping": true,
       "quantity": 12,
       "category": "male",
-      "image": "%PUBLIC_URL%/static/img/15-tshirt-male.jpeg"
+      "image": "http://localhost:3000/static/img/15-t-shirt-male.jpeg"
     },    {
       "id": "16",
       "sku": "9372732739827381",
@@ -175,7 +175,7 @@
       "isFreeShipping": true,
       "quantity": 12,
       "category": "male",
-      "image": "%PUBLIC_URL%/static/img/16-tshirt-male.jpeg"
+      "image": "http://localhost:3000/static/img/16-t-shirt-male.jpeg"
     },    {
       "id": "17",
       "sku": "9372732739827381",
@@ -186,7 +186,7 @@
       "isFreeShipping": true,
       "quantity": 12,
       "category": "male",
-      "image": "%PUBLIC_URL%/static/img/17-tshirt-male.jpeg"
+      "image": "http://localhost:3000/static/img/17-t-shirt-male.jpeg"
     },    {
       "id": "18",
       "sku": "9372732739827381",
@@ -197,7 +197,7 @@
       "isFreeShipping": true,
       "quantity": 12,
       "category": "male",
-      "image": "%PUBLIC_URL%/static/img/18-tshirt-male.jpeg"
+      "image": "http://localhost:3000/static/img/18-t-shirt-male.jpeg"
     },    {
       "id": "19",
       "sku": "9372732739827381",
@@ -208,7 +208,7 @@
       "isFreeShipping": true,
       "quantity": 12,
       "category": "male",
-      "image": "%PUBLIC_URL%/static/img/19-tshirt-male.jpeg"
+      "image": "http://localhost:3000/static/img/19-t-shirt-male.jpeg"
     },    {
       "id": "20",
       "sku": "9372732739827381",
@@ -219,7 +219,7 @@
       "isFreeShipping": true,
       "quantity": 12,
       "category": "male",
-      "image": "%PUBLIC_URL%/static/img/20-tshirt-male.jpeg"
+      "image": "http://localhost:3000/static/img/20-t-shirt-male.jpeg"
     },    {
       "id": "21",
       "sku": "9372732739827381",
@@ -230,7 +230,7 @@
       "isFreeShipping": true,
       "quantity": 12,
       "category": "male",
-      "image": "%PUBLIC_URL%/static/img/21-tshirt-male.jpeg"
+      "image": "http://localhost:3000/static/img/21-t-shirt-male.jpeg"
     },    {
       "id": "22",
       "sku": "9372732739827381",
@@ -241,7 +241,7 @@
       "isFreeShipping": true,
       "quantity": 12,
       "category": "male",
-      "image": "%PUBLIC_URL%/static/img/22-tshirt-male.jpeg"
+      "image": "http://localhost:3000/static/img/22-t-shirt-male.jpeg"
     },    {
       "id": "23",
       "sku": "9372732739827381",
@@ -252,7 +252,7 @@
       "isFreeShipping": true,
       "quantity": 12,
       "category": "male",
-      "image": "%PUBLIC_URL%/static/img/23-tshirt-male.jpeg"
+      "image": "http://localhost:3000/static/img/23-t-shirt-male.jpeg"
     },    {
       "id": "24",
       "sku": "9372732739827381",
@@ -263,7 +263,7 @@
       "isFreeShipping": true,
       "quantity": 12,
       "category": "male",
-      "image": "%PUBLIC_URL%/static/img/24-tshirt-male.jpeg"
+      "image": "http://localhost:3000/static/img/24-t-shirt-male.jpeg"
     },    {
       "id": "25",
       "sku": "9372732739827381",
@@ -274,7 +274,7 @@
       "isFreeShipping": true,
       "quantity": 12,
       "category": "male",
-      "image": "%PUBLIC_URL%/static/img/25-tshirt-male.jpeg"
+      "image": "http://localhost:3000/static/img/25-t-shirt-male.jpeg"
     },    {
       "id": "26",
       "sku": "9372732739827381",
@@ -285,7 +285,7 @@
       "isFreeShipping": true,
       "quantity": 12,
       "category": "male",
-      "image": "%PUBLIC_URL%/static/img/26-tshirt-male.jpeg"
+      "image": "http://localhost:3000/static/img/26-t-shirt-male.jpeg"
     },    {
       "id": "27",
       "sku": "9372732739827381",
@@ -296,7 +296,7 @@
       "isFreeShipping": true,
       "quantity": 12,
       "category": "male",
-      "image": "%PUBLIC_URL%/static/img/27-tshirt-male.jpeg"
+      "image": "http://localhost:3000/static/img/27-t-shirt-male.jpeg"
     },    {
       "id": "28",
       "sku": "9372732739827381",
@@ -307,7 +307,7 @@
       "isFreeShipping": true,
       "quantity": 12,
       "category": "male",
-      "image": "%PUBLIC_URL%/static/img/28-tshirt-male.jpeg"
+      "image": "http://localhost:3000/static/img/28-t-shirt-male.jpeg"
     },    {
       "id": "29",
       "sku": "9372732739827381",
@@ -318,7 +318,7 @@
       "isFreeShipping": true,
       "quantity": 12,
       "category": "male",
-      "image": "%PUBLIC_URL%/static/img/29-tshirt-male.jpeg"
+      "image": "http://localhost:3000/static/img/29-t-shirt-male.jpeg"
     },    {
       "id": "30",
       "sku": "9372732739827381",
@@ -329,7 +329,7 @@
       "isFreeShipping": true,
       "quantity": 12,
       "category": "female",
-      "image": "%PUBLIC_URL%/static/img/1-tshirt-female.jpeg"
+      "image": "http://localhost:3000/static/img/1-t-shirt-female.png"
     },    {
       "id": "31",
       "sku": "9372732739827381",
@@ -340,7 +340,7 @@
       "isFreeShipping": true,
       "quantity": 12,
       "category": "female",
-      "image": "%PUBLIC_URL%/static/img/2-tshirt-female.jpeg"
+      "image": "http://localhost:3000/static/img/2-t-shirt-female.jpeg"
     },    {
       "id": "32",
       "sku": "9372732739827381",
@@ -351,7 +351,7 @@
       "isFreeShipping": true,
       "quantity": 12,
       "category": "female",
-      "image": "%PUBLIC_URL%/static/img/3-tshirt-female.jpeg"
+      "image": "http://localhost:3000/static/img/3-t-shirt-female.jpeg"
     },    {
       "id": "33",
       "sku": "9372732739827381",
@@ -362,7 +362,7 @@
       "isFreeShipping": true,
       "quantity": 12,
       "category": "female",
-      "image": "%PUBLIC_URL%/static/img/4-tshirt-female.jpeg"
+      "image": "http://localhost:3000/static/img/4-t-shirt-female.jpeg"
     },    {
       "id": "34",
       "sku": "9372732739827381",
@@ -373,7 +373,7 @@
       "isFreeShipping": true,
       "quantity": 12,
       "category": "female",
-      "image": "%PUBLIC_URL%/static/img/5-tshirt-female.jpeg"
+      "image": "http://localhost:3000/static/img/5-t-shirt-female.jpeg"
     },    {
       "id": "35",
       "sku": "9372732739827381",
@@ -384,7 +384,7 @@
       "isFreeShipping": true,
       "quantity": 12,
       "category": "female",
-      "image": "%PUBLIC_URL%/static/img/6-tshirt-female.jpeg"
+      "image": "http://localhost:3000/static/img/6-t-shirt-female.jpeg"
     },    {
       "id": "36",
       "sku": "9372732739827381",
@@ -395,7 +395,7 @@
       "isFreeShipping": true,
       "quantity": 12,
       "category": "female",
-      "image": "%PUBLIC_URL%/static/img/7-tshirt-female.jpeg"
+      "image": "http://localhost:3000/static/img/7-t-shirt-female.jpeg"
     },    {
       "id": "37",
       "sku": "9372732739827381",
@@ -406,7 +406,7 @@
       "isFreeShipping": true,
       "quantity": 12,
       "category": "female",
-      "image": "%PUBLIC_URL%/static/img/8-tshirt-female.jpeg"
+      "image": "http://localhost:3000/static/img/8-t-shirt-female.jpeg"
     },    {
       "id": "38",
       "sku": "9372732739827381",
@@ -417,7 +417,7 @@
       "isFreeShipping": true,
       "quantity": 12,
       "category": "female",
-      "image": "%PUBLIC_URL%/static/img/9-tshirt-female.jpeg"
+      "image": "http://localhost:3000/static/img/9-t-shirt-female.jpeg"
     },    {
       "id": "39",
       "sku": "9372732739827381",
@@ -428,7 +428,7 @@
       "isFreeShipping": true,
       "quantity": 12,
       "category": "female",
-      "image": "%PUBLIC_URL%/static/img/10-tshirt-female.jpeg"
+      "image": "http://localhost:3000/static/img/10-t-shirt-female.png"
     },    {
       "id": "40",
       "sku": "9372732739827381",
@@ -439,7 +439,7 @@
       "isFreeShipping": true,
       "quantity": 12,
       "category": "female",
-      "image": "%PUBLIC_URL%/static/img/11-tshirt-female.jpeg"
+      "image": "http://localhost:3000/static/img/11-t-shirt-female.jpeg"
     },    {
       "id": "41",
       "sku": "9372732739827381",
@@ -450,7 +450,7 @@
       "isFreeShipping": true,
       "quantity": 12,
       "category": "female",
-      "image": "%PUBLIC_URL%/static/img/12-tshirt-female.jpeg"
+      "image": "http://localhost:3000/static/img/12-t-shirt-female.jpeg"
     },    {
       "id": "42",
       "sku": "9372732739827381",
@@ -461,7 +461,7 @@
       "isFreeShipping": true,
       "quantity": 12,
       "category": "female",
-      "image": "%PUBLIC_URL%/static/img/13-tshirt-female.jpeg"
+      "image": "http://localhost:3000/static/img/13-t-shirt-female.jpeg"
     },    {
       "id": "43",
       "sku": "9372732739827381",
@@ -472,7 +472,7 @@
       "isFreeShipping": true,
       "quantity": 12,
       "category": "female",
-      "image": "%PUBLIC_URL%/static/img/14-tshirt-female.jpeg"
+      "image": "http://localhost:3000/static/img/14-t-shirt-female.jpeg"
     },    {
       "id": "44",
       "sku": "9372732739827381",
@@ -483,7 +483,7 @@
       "isFreeShipping": true,
       "quantity": 12,
       "category": "female",
-      "image": "%PUBLIC_URL%/static/img/15-tshirt-female.jpeg"
+      "image": "http://localhost:3000/static/img/15-t-shirt-female.jpeg"
     },    {
       "id": "45",
       "sku": "9372732739827381",
@@ -494,7 +494,7 @@
       "isFreeShipping": true,
       "quantity": 12,
       "category": "female",
-      "image": "%PUBLIC_URL%/static/img/16-tshirt-female.jpeg"
+      "image": "http://localhost:3000/static/img/16-t-shirt-female.jpeg"
     },    {
       "id": "46",
       "sku": "9372732739827381",
@@ -505,7 +505,7 @@
       "isFreeShipping": true,
       "quantity": 12,
       "category": "female",
-      "image": "%PUBLIC_URL%/static/img/17-tshirt-female.jpeg"
+      "image": "http://localhost:3000/static/img/17-t-shirt-female.jpeg"
     },    {
       "id": "47",
       "sku": "9372732739827381",
@@ -516,7 +516,7 @@
       "isFreeShipping": true,
       "quantity": 12,
       "category": "female",
-      "image": "%PUBLIC_URL%/static/img/18-tshirt-female.jpeg"
+      "image": "http://localhost:3000/static/img/18-t-shirt-female.jpeg"
     },    {
       "id": "48",
       "sku": "9372732739827381",
@@ -527,7 +527,7 @@
       "isFreeShipping": true,
       "quantity": 12,
       "category": "female",
-      "image": "%PUBLIC_URL%/static/img/19-tshirt-female.jpeg"
+      "image": "http://localhost:3000/static/img/19-t-shirt-female.jpeg"
     },    {
       "id": "49",
       "sku": "9372732739827381",
@@ -538,7 +538,7 @@
       "isFreeShipping": true,
       "quantity": 12,
       "category": "female",
-      "image": "%PUBLIC_URL%/static/img/20-tshirt-female.jpeg"
+      "image": "http://localhost:3000/static/img/20-t-shirt-female.jpeg"
     },    {
       "id": "50",
       "sku": "9372732739827381",
@@ -549,7 +549,7 @@
       "isFreeShipping": true,
       "quantity": 12,
       "category": "female",
-      "image": "%PUBLIC_URL%/static/img/21-tshirt-female.jpeg"
+      "image": "http://localhost:3000/static/img/21-t-shirt-female.jpeg"
     }
   ]
 }
