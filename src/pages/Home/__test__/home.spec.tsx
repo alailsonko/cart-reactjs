@@ -31,15 +31,15 @@ it('renders with or without a name', () => {
   act(() => {
     render(<Home />, container);
   });
-  expect(container.textContent).toBe('Home');
+  expect(container.textContent).toBe('noXSSMLXLsome title for the productR$ 99.00');
 
   act(() => {
     render(<Home />, container);
   });
-  expect(container.textContent).toBe('Home');
+  expect(container.textContent).toBe('noXSSMLXLsome title for the productR$ 99.00');
 
   act(() => {
     render(<Home />, container);
   });
-  expect(container.textContent).toBe('Home');
+  expect(container.textContent).toBe('noXSSMLXLsome title for the productR$ 99.00');
 });
