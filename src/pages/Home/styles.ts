@@ -4,14 +4,20 @@ export const Container = styled.div`
 
 `;
 
+interface Props {
+  value: string;
+}
+
 export const FilterButton = styled.button`
     border-radius: 50%;
     height: 50px;
     width: 50px;
     outline: none;
+    background-color: ${(props: Props) => (props.value === 'true' ? 'blue' : 'red')};
 `;
 export const IsFreeShippingButton = styled.button`
-
+  outline: none;
+  background-color: ${(props: Props) => (props.value === 'true' ? 'blue' : 'red')};
 `;
 export const Header = styled.div`
    background-color: var(--color-purple-lighter);
