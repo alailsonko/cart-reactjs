@@ -12,65 +12,75 @@ import {
   Price,
 } from './styles';
 
+const initialActiveState = {
+  shipping: 'false',
+  xs: 'false',
+  s: 'false',
+  m: 'false',
+  l: 'false',
+  xl: 'false',
+};
+
 function Home() {
-  const [active, setActive] = useState({ active: false });
+  const [active, setActive] = useState(initialActiveState);
 
   const URL = process.env.NODE_ENV === 'development' ? 'http://localhost:3000/' : 'https://cart-reactjs.netlify.app/';
 
   const handleClick = (event: any) => {
-    console.log(event.target.name);
-    console.log(event.target.value);
-
-    if (event.target.value === 'true') {
-      setActive({ active: false });
-    }
     if (event.target.value === 'false') {
-      setActive({ active: true });
+      event.target.value = 'true';
+      setActive({ ...active, [event.target.name]: event.target.value });
+      return;
     }
-    event.target.value = active.active;
+    event.target.value = 'false';
     setActive({ ...active, [event.target.name]: event.target.value });
   };
+
+  const {
+    l, m, s, shipping, xl, xs,
+  } = active;
+
   return (
     <Container>
       <Header>
         <FilterWrapper>
           <IsFreeShippingButton
-            value={`${active.active}`}
+            value={shipping}
             name="shipping"
             onClick={handleClick}
           >
             Free Shipping
           </IsFreeShippingButton>
           <FilterButton
-            value={`${active.active}`}
+            value={xs}
             name="xs"
             onClick={handleClick}
           >
             XS
           </FilterButton>
           <FilterButton
-            value={`${active.active}`}
+            value={s}
             name="s"
             onClick={handleClick}
           >
             S
           </FilterButton>
           <FilterButton
-            value={`${active.active}`}
+            value={m}
             name="m"
             onClick={handleClick}
           >
             M
           </FilterButton>
           <FilterButton
-            value={`${active.active}`}
+            value={l}
             name="l"
             onClick={handleClick}
           >
             L
           </FilterButton>
           <FilterButton
-            value={`${active.active}`}
+            value={xl}
             name="xl"
             onClick={handleClick}
           >
