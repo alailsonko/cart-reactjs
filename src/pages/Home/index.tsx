@@ -13,6 +13,8 @@ import {
 } from './styles';
 
 function Home() {
+  const URL = process.env.NODE_ENV === 'development' ? 'http://localhost:3000/' : 'https://cart-reactjs.netlify.app/';
+
   return (
     <Container>
       <Header>
@@ -39,7 +41,7 @@ function Home() {
       </Header>
       <WrapperShelf>
         <Product>
-          <ImageProduct src="http://localhost:3000/static/img/4-t-shirt-male.jpeg" />
+          <ImageProduct src={`${URL}static/img/4-t-shirt-male.jpeg`} />
           <TitleProduct>
             some title for the product
           </TitleProduct>
@@ -49,7 +51,7 @@ function Home() {
 
         </Product>
         <Product>
-          <ImageProduct src="http://localhost:3000/static/img/4-t-shirt-male.jpeg" />
+          <ImageProduct src={`${URL}static/img/4-t-shirt-male.jpeg`} />
           <TitleProduct>
             some title for the product
           </TitleProduct>
@@ -59,7 +61,7 @@ function Home() {
 
         </Product>
         <Product>
-          <ImageProduct src="http://localhost:3000/static/img/4-t-shirt-male.jpeg" />
+          <ImageProduct src={`${URL}static/img/4-t-shirt-male.jpeg`} />
           <TitleProduct>
             some title for the product
           </TitleProduct>
@@ -69,7 +71,7 @@ function Home() {
 
         </Product>
         <Product>
-          <ImageProduct src="http://localhost:3000/static/img/4-t-shirt-male.jpeg" />
+          <ImageProduct src={`${URL}static/img/4-t-shirt-male.jpeg`} />
           <TitleProduct>
             some title for the product
           </TitleProduct>
