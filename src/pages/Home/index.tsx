@@ -48,6 +48,36 @@ function Home() {
           </Price>
 
         </Product>
+        <Product>
+          <ImageProduct src="http://localhost:3000/static/img/4-t-shirt-male.jpeg" />
+          <TitleProduct>
+            some title for the product
+          </TitleProduct>
+          <Price>
+            R$ 99.00
+          </Price>
+
+        </Product>
+        <Product>
+          <ImageProduct src="http://localhost:3000/static/img/4-t-shirt-male.jpeg" />
+          <TitleProduct>
+            some title for the product
+          </TitleProduct>
+          <Price>
+            R$ 99.00
+          </Price>
+
+        </Product>
+        <Product>
+          <ImageProduct src="http://localhost:3000/static/img/4-t-shirt-male.jpeg" />
+          <TitleProduct>
+            some title for the product
+          </TitleProduct>
+          <Price>
+            R$ 99.00
+          </Price>
+
+        </Product>
       </WrapperShelf>
     </Container>
 
