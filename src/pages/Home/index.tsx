@@ -10,6 +10,8 @@ import {
   ImageProduct,
   TitleProduct,
   Price,
+  AddToCartIcon,
+  WrapperProductImage,
 } from './styles';
 
 const initialActiveState = {
@@ -90,7 +92,11 @@ function Home() {
       </Header>
       <WrapperShelf>
         <Product>
-          <ImageProduct src={`${URL}static/img/4-t-shirt-male.jpeg`} />
+          <WrapperProductImage>
+            <ImageProduct src={`${URL}static/img/4-t-shirt-male.jpeg`} />
+            <AddToCartIcon />
+          </WrapperProductImage>
+
           <TitleProduct>
             some title for the product
           </TitleProduct>
@@ -100,7 +106,10 @@ function Home() {
 
         </Product>
         <Product>
-          <ImageProduct src={`${URL}static/img/4-t-shirt-male.jpeg`} />
+          <WrapperProductImage>
+            <ImageProduct src={`${URL}static/img/4-t-shirt-male.jpeg`} />
+            <AddToCartIcon />
+          </WrapperProductImage>
           <TitleProduct>
             some title for the product
           </TitleProduct>
@@ -110,7 +119,11 @@ function Home() {
 
         </Product>
         <Product>
-          <ImageProduct src={`${URL}static/img/4-t-shirt-male.jpeg`} />
+          <WrapperProductImage>
+            <ImageProduct src={`${URL}static/img/4-t-shirt-male.jpeg`} />
+            <AddToCartIcon />
+          </WrapperProductImage>
+
           <TitleProduct>
             some title for the product
           </TitleProduct>
@@ -120,7 +133,11 @@ function Home() {
 
         </Product>
         <Product>
-          <ImageProduct src={`${URL}static/img/4-t-shirt-male.jpeg`} />
+          <WrapperProductImage>
+            <ImageProduct src={`${URL}static/img/4-t-shirt-male.jpeg`} />
+            <AddToCartIcon />
+          </WrapperProductImage>
+
           <TitleProduct>
             some title for the product
           </TitleProduct>
