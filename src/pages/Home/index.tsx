@@ -12,6 +12,7 @@ import {
   Price,
   AddToCartIcon,
   WrapperProductImage,
+  AddIconContainer,
 } from './styles';
 
 const initialActiveState = {
@@ -94,21 +95,23 @@ function Home() {
         <Product>
           <WrapperProductImage>
             <ImageProduct src={`${URL}static/img/4-t-shirt-male.jpeg`} />
-            <AddToCartIcon />
+            <AddIconContainer>
+              <AddToCartIcon />
+            </AddIconContainer>
           </WrapperProductImage>
-
           <TitleProduct>
             some title for the product
           </TitleProduct>
           <Price>
             R$ 99.00
           </Price>
-
         </Product>
         <Product>
           <WrapperProductImage>
             <ImageProduct src={`${URL}static/img/4-t-shirt-male.jpeg`} />
-            <AddToCartIcon />
+            <AddIconContainer>
+              <AddToCartIcon />
+            </AddIconContainer>
           </WrapperProductImage>
           <TitleProduct>
             some title for the product
@@ -116,35 +119,34 @@ function Home() {
           <Price>
             R$ 99.00
           </Price>
-
         </Product>
         <Product>
           <WrapperProductImage>
             <ImageProduct src={`${URL}static/img/4-t-shirt-male.jpeg`} />
-            <AddToCartIcon />
+            <AddIconContainer>
+              <AddToCartIcon />
+            </AddIconContainer>
           </WrapperProductImage>
-
           <TitleProduct>
             some title for the product
           </TitleProduct>
           <Price>
             R$ 99.00
           </Price>
-
         </Product>
         <Product>
           <WrapperProductImage>
             <ImageProduct src={`${URL}static/img/4-t-shirt-male.jpeg`} />
-            <AddToCartIcon />
+            <AddIconContainer>
+              <AddToCartIcon />
+            </AddIconContainer>
           </WrapperProductImage>
-
           <TitleProduct>
             some title for the product
           </TitleProduct>
           <Price>
             R$ 99.00
           </Price>
-
         </Product>
       </WrapperShelf>
     </Container>

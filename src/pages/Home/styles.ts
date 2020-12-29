@@ -47,14 +47,9 @@ export const WrapperShelf = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   margin: 0 40px;
+  z-index: 4;
 `;
-export const Product = styled.div`
-  width: 170px;
-  border-radius: 10px;
-  border: 1px solid var(--color-purple-lighter);
-  margin: 10px 10px;
-  background-color: var(--color-gray-darker);
-`;
+
 export const TitleProduct = styled.h2`
   font-size: 14px;
   font-weight: normal;
@@ -73,14 +68,27 @@ export const Price = styled.h2`
   margin-right: 5px;
 `;
 
-export const AddToCartIcon = styled(FaCartPlus)`
-  background-color: white;
-  height: 28px;
-  width: 28px;
+export const AddIconContainer = styled.div`
+
+
   position: absolute;
-  z-index: 2;
+  display: none; 
+  visibility: hidden;
   bottom: 4px;
   right: 0;
+  background-color: white;
+  height: 0;
+  width: 0;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: ease 0.5s;
+`;
+
+export const AddToCartIcon = styled(FaCartPlus)`
+  height: 28px;
+  width: 28px;
 `;
 
 export const RemoveFromCartIcon = styled(MdRemoveCircle)`
@@ -88,6 +96,24 @@ export const RemoveFromCartIcon = styled(MdRemoveCircle)`
 `;
 
 export const WrapperProductImage = styled.div`
-background-color: green;
+background-color: black;
 position: relative;
+z-index: 1;
+border-radius: 6px 6px 0 0;
+`;
+export const Product = styled.div`
+  width: 170px;
+  border-radius: 10px;
+  border: 1px solid var(--color-purple-lighter);
+  margin: 10px 10px;
+  background-color: var(--color-gray-darker);
+  &:hover ${AddIconContainer} {
+   visibility: visible;
+   background-color: white; 
+   bottom: 4px;
+   right: 0;
+   z-index: 2;
+   height: 38px;
+    width: 38px;
+  }
 `;
