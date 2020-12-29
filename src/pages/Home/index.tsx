@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Cart from '../../components/Cart';
 import {
   Container,
   Header,
@@ -44,112 +45,115 @@ function Home() {
   } = active;
 
   return (
-    <Container>
-      <Header>
-        <FilterWrapper>
-          <IsFreeShippingButton
-            value={shipping}
-            name="shipping"
-            onClick={handleClick}
-          >
-            Free Shipping
-          </IsFreeShippingButton>
-          <FilterButton
-            value={xs}
-            name="xs"
-            onClick={handleClick}
-          >
-            XS
-          </FilterButton>
-          <FilterButton
-            value={s}
-            name="s"
-            onClick={handleClick}
-          >
-            S
-          </FilterButton>
-          <FilterButton
-            value={m}
-            name="m"
-            onClick={handleClick}
-          >
-            M
-          </FilterButton>
-          <FilterButton
-            value={l}
-            name="l"
-            onClick={handleClick}
-          >
-            L
-          </FilterButton>
-          <FilterButton
-            value={xl}
-            name="xl"
-            onClick={handleClick}
-          >
-            XL
-          </FilterButton>
-        </FilterWrapper>
-      </Header>
-      <WrapperShelf>
-        <Product>
-          <WrapperProductImage>
-            <ImageProduct src={`${URL}static/img/4-t-shirt-male.jpeg`} />
-            <AddIconContainer>
-              <AddToCartIcon />
-            </AddIconContainer>
-          </WrapperProductImage>
-          <TitleProduct>
-            some title for the product
-          </TitleProduct>
-          <Price>
-            R$ 99.00
-          </Price>
-        </Product>
-        <Product>
-          <WrapperProductImage>
-            <ImageProduct src={`${URL}static/img/4-t-shirt-male.jpeg`} />
-            <AddIconContainer>
-              <AddToCartIcon />
-            </AddIconContainer>
-          </WrapperProductImage>
-          <TitleProduct>
-            some title for the product
-          </TitleProduct>
-          <Price>
-            R$ 99.00
-          </Price>
-        </Product>
-        <Product>
-          <WrapperProductImage>
-            <ImageProduct src={`${URL}static/img/4-t-shirt-male.jpeg`} />
-            <AddIconContainer>
-              <AddToCartIcon />
-            </AddIconContainer>
-          </WrapperProductImage>
-          <TitleProduct>
-            some title for the product
-          </TitleProduct>
-          <Price>
-            R$ 99.00
-          </Price>
-        </Product>
-        <Product>
-          <WrapperProductImage>
-            <ImageProduct src={`${URL}static/img/4-t-shirt-male.jpeg`} />
-            <AddIconContainer>
-              <AddToCartIcon />
-            </AddIconContainer>
-          </WrapperProductImage>
-          <TitleProduct>
-            some title for the product
-          </TitleProduct>
-          <Price>
-            R$ 99.00
-          </Price>
-        </Product>
-      </WrapperShelf>
-    </Container>
+    <>
+      <Cart />
+      <Container>
+        <Header>
+          <FilterWrapper>
+            <IsFreeShippingButton
+              value={shipping}
+              name="shipping"
+              onClick={handleClick}
+            >
+              Free Shipping
+            </IsFreeShippingButton>
+            <FilterButton
+              value={xs}
+              name="xs"
+              onClick={handleClick}
+            >
+              XS
+            </FilterButton>
+            <FilterButton
+              value={s}
+              name="s"
+              onClick={handleClick}
+            >
+              S
+            </FilterButton>
+            <FilterButton
+              value={m}
+              name="m"
+              onClick={handleClick}
+            >
+              M
+            </FilterButton>
+            <FilterButton
+              value={l}
+              name="l"
+              onClick={handleClick}
+            >
+              L
+            </FilterButton>
+            <FilterButton
+              value={xl}
+              name="xl"
+              onClick={handleClick}
+            >
+              XL
+            </FilterButton>
+          </FilterWrapper>
+        </Header>
+        <WrapperShelf>
+          <Product>
+            <WrapperProductImage>
+              <ImageProduct src={`${URL}static/img/4-t-shirt-male.jpeg`} />
+              <AddIconContainer>
+                <AddToCartIcon />
+              </AddIconContainer>
+            </WrapperProductImage>
+            <TitleProduct>
+              some title for the product
+            </TitleProduct>
+            <Price>
+              R$ 99.00
+            </Price>
+          </Product>
+          <Product>
+            <WrapperProductImage>
+              <ImageProduct src={`${URL}static/img/4-t-shirt-male.jpeg`} />
+              <AddIconContainer>
+                <AddToCartIcon />
+              </AddIconContainer>
+            </WrapperProductImage>
+            <TitleProduct>
+              some title for the product
+            </TitleProduct>
+            <Price>
+              R$ 99.00
+            </Price>
+          </Product>
+          <Product>
+            <WrapperProductImage>
+              <ImageProduct src={`${URL}static/img/4-t-shirt-male.jpeg`} />
+              <AddIconContainer>
+                <AddToCartIcon />
+              </AddIconContainer>
+            </WrapperProductImage>
+            <TitleProduct>
+              some title for the product
+            </TitleProduct>
+            <Price>
+              R$ 99.00
+            </Price>
+          </Product>
+          <Product>
+            <WrapperProductImage>
+              <ImageProduct src={`${URL}static/img/4-t-shirt-male.jpeg`} />
+              <AddIconContainer>
+                <AddToCartIcon />
+              </AddIconContainer>
+            </WrapperProductImage>
+            <TitleProduct>
+              some title for the product
+            </TitleProduct>
+            <Price>
+              R$ 99.00
+            </Price>
+          </Product>
+        </WrapperShelf>
+      </Container>
+    </>
 
   );
 }
