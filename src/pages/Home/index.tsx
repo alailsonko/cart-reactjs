@@ -1,5 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+// redux logic
+import { connect, ConnectedProps, useDispatch } from 'react-redux';
+import { getProducts } from '../../store/products/actions';
+import { ProductsState, ProductType } from '../../store/products/types';
+// components logic
 import Cart from '../../components/Cart';
+// styling logic
 import {
   Container,
   Header,
@@ -25,9 +31,27 @@ const initialActiveState = {
   xl: 'false',
 };
 
-function Home() {
-  const [active, setActive] = useState(initialActiveState);
+interface RootState {
+  products: ProductsState
+}
 
+const mapState = (state: RootState) => ({
+  products: state.products,
+});
+
+const mapDispatch = {
+  getAllProducts: getProducts,
+};
+
+const connector = connect(mapState, mapDispatch);
+
+type PropsFromRedux = ConnectedProps<typeof connector>
+
+type Props = PropsFromRedux
+
+function Home(props: Props) {
+  const [active, setActive] = useState(initialActiveState);
+  const dispatch = useDispatch();
   const URL = process.env.NODE_ENV === 'development' ? 'http://localhost:3000/' : 'https://cart-reactjs.netlify.app/';
 
   const handleClick = (event: any) => {
@@ -43,6 +67,12 @@ function Home() {
   const {
     l, m, s, shipping, xl, xs,
   } = active;
+  const { products, getAllProducts } = props;
+  useEffect(() => {
+    dispatch(getAllProducts);
+  }, [getAllProducts]);
+
+  console.log('from home', products);
 
   return (
     <>
@@ -95,62 +125,22 @@ function Home() {
           </FilterWrapper>
         </Header>
         <WrapperShelf>
-          <Product>
-            <WrapperProductImage>
-              <ImageProduct src={`${URL}static/img/4-t-shirt-male.jpeg`} />
-              <AddIconContainer>
-                <AddToCartIcon />
-              </AddIconContainer>
-            </WrapperProductImage>
-            <TitleProduct>
-              some title for the product
-            </TitleProduct>
-            <Price>
-              R$ 99.00
-            </Price>
-          </Product>
-          <Product>
-            <WrapperProductImage>
-              <ImageProduct src={`${URL}static/img/4-t-shirt-male.jpeg`} />
-              <AddIconContainer>
-                <AddToCartIcon />
-              </AddIconContainer>
-            </WrapperProductImage>
-            <TitleProduct>
-              some title for the product
-            </TitleProduct>
-            <Price>
-              R$ 99.00
-            </Price>
-          </Product>
-          <Product>
-            <WrapperProductImage>
-              <ImageProduct src={`${URL}static/img/4-t-shirt-male.jpeg`} />
-              <AddIconContainer>
-                <AddToCartIcon />
-              </AddIconContainer>
-            </WrapperProductImage>
-            <TitleProduct>
-              some title for the product
-            </TitleProduct>
-            <Price>
-              R$ 99.00
-            </Price>
-          </Product>
-          <Product>
-            <WrapperProductImage>
-              <ImageProduct src={`${URL}static/img/4-t-shirt-male.jpeg`} />
-              <AddIconContainer>
-                <AddToCartIcon />
-              </AddIconContainer>
-            </WrapperProductImage>
-            <TitleProduct>
-              some title for the product
-            </TitleProduct>
-            <Price>
-              R$ 99.00
-            </Price>
-          </Product>
+          {products.products.map((item: ProductType) => (
+            <Product>
+              <WrapperProductImage>
+                <ImageProduct src={`${URL}${item.image}`} />
+                <AddIconContainer>
+                  <AddToCartIcon />
+                </AddIconContainer>
+              </WrapperProductImage>
+              <TitleProduct>
+                {item.title}
+              </TitleProduct>
+              <Price>
+                {item.price}
+              </Price>
+            </Product>
+          ))}
         </WrapperShelf>
       </Container>
     </>
@@ -158,4 +148,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default connector(Home);

@@ -8,7 +8,7 @@ import {
 } from './styles';
 
 const Cart: React.FC = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   const handleIsOpenClick = () => {
     if (isOpen === false) {
@@ -21,7 +21,7 @@ const Cart: React.FC = () => {
   return (
     <Container isOpen={`${isOpen}`}>
       <WrapperCloseOpenIcon onClick={handleIsOpenClick}>
-        {isOpen ? <CloseCartIcon /> : <OpenCartIcon /> }
+        {!isOpen ? <CloseCartIcon /> : <OpenCartIcon /> }
       </WrapperCloseOpenIcon>
       <h1>Cart</h1>
     </Container>
