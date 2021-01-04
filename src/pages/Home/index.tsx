@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 // redux logic
 import { connect, ConnectedProps, useDispatch } from 'react-redux';
 import { getProducts } from '../../store/products/actions';
+import { addProductToCart } from '../../store/cart/actions';
 import { ProductsState, ProductType } from '../../store/products/types';
 // components logic
 import Cart from '../../components/Cart';
@@ -41,6 +42,7 @@ const mapState = (state: RootState) => ({
 
 const mapDispatch = {
   getAllProducts: getProducts,
+  AddProductToCart: addProductToCart,
 };
 
 const connector = connect(mapState, mapDispatch);
@@ -70,7 +72,11 @@ function Home(props: Props) {
   const { products, getAllProducts } = props;
   useEffect(() => {
     dispatch(getAllProducts);
-  }, [getAllProducts]);
+  }, [getAllProducts, dispatch]);
+
+  const handleAddProductToCart = (product: ProductType):void => {
+    props.AddProductToCart(product);
+  };
 
   console.log('from home', products);
 
@@ -126,7 +132,7 @@ function Home(props: Props) {
         </Header>
         <WrapperShelf>
           {products.products.map((item: ProductType) => (
-            <Product>
+            <Product onClick={() => handleAddProductToCart(item)}>
               <WrapperProductImage>
                 <ImageProduct src={`${URL}${item.image}`} />
                 <AddIconContainer>
